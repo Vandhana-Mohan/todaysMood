@@ -9,7 +9,9 @@ This problem has the same basic one as the Pursuit curriculum usually does, with
 ## Your Tools
 
 - Run `npm install` to install Jest. Then you can run `npm test` or (better yet) `npm run watch` in your terminal to get tests.
-  - The JSDoc
+- Read the JSDoc thoroughly!
+- The tests are always your source of truth.
+- The section below has **lots of conceptual help**.
 
 ## Your Task
 
@@ -19,6 +21,7 @@ You _can_ solve this problem using `if/else` chains or a `switch` statement, but
 
 Let's look at the following example.
 
+```js
     let name = "colin";
     const greetings = {
       bill: "Good morning!",
@@ -26,6 +29,7 @@ Let's look at the following example.
       adrian: "Good morning, Vietnam!",
       truman: "Good morning. And in case I don't see you, good afternoon, evening, and good night.",
     };
+```
 
 You _could_ use an `if/else` chain like so:
 
