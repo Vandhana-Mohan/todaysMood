@@ -52,14 +52,14 @@ const reviews = {
 };
 
 const day1 = {
-  name: 'wed',
+  name: "wed",
   mood: 2,
-}
+};
 
 const day2 = {
-  name: 'thu',
-  mood: -1
-}
+  name: "thu",
+  mood: -1,
+};
 
 // Write a function that follows this specification.
 
@@ -76,11 +76,11 @@ const day2 = {
 
 // Write your function above! (Preferably on the /very/ next line after the JSDoc comment ends.)
 
- /********************************************
+/********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
  *           PLEASE DON'T TOUCH!            *
  ********************************************/
-if (typeof getTodaysFeeling === 'undefined') {
+if (typeof getTodaysFeeling === "undefined") {
   getTodaysFeeling = undefined;
 }
 
