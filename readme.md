@@ -4,7 +4,7 @@ An exercise in using dynamic object keys to access data.
 
 ## Your Structure
 
-This problem has the same basic one as the Pursuit curriculum usually does, with the small added wrinkle that we haven't written the start of the function.
+This problem has the same basic setup as the Pursuit curriculum usually does, with the small added wrinkle that we haven't written the start of the function for you.
 
 ## Your Tools
 
