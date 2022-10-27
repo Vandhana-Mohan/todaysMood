@@ -65,9 +65,10 @@ Instead, what we want is to use bracket notation, which is JavaScript's syntax f
 ```js
 console.log(greetings[name])
 
-Good morning good morning good morning.
+//> "Good morning good morning good morning."
+```
 
-
+```js
 name = 'adrian'
 console.log(greetings[name])
 
