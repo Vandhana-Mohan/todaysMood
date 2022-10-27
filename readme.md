@@ -91,7 +91,7 @@ Now, to get the key `colin` from the string `'Colin Jaffe'`, we're going to have
 
 Let's take it step by step.
 
-First, we could see if we can get the first name only. `String.prototype.split` can give us an array out of string, we just need to tell it when to decide to start a new array element. Passing a `' '` separator can do that for us.'
+First, we could see if we can get the first name only. `String.prototype.split` can give us an array out of string, we just need to tell it when to decide to start a new array element. Passing a `' '` separator can do that for us.
 
 ```js
 console.log(name.split(" "));
