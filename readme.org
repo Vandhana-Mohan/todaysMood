@@ -18,10 +18,12 @@ Let's look at the following example.
 
 #+NAME: vars
 #+begin_src js
-const name = "colin";
+let name = "colin";
 const greetings = {
-  angie: "Good morning!",
+  bill: "Good morning!",
   colin: "Good morning good morning good morning.",
+  adrian: "Good morning, Vietnam!",
+  truman: "Good morning. And in case I don't see you, good afternoon, evening, and good night.",
 };
 #+end_src
 
@@ -33,6 +35,10 @@ if (name === "colin") {
   console.log(greetings.colin);
 } else if (name === "angie") {
   console.log(greetings.angie);
+} else if (name === "adrian") {
+  console.log(greetings.adrian);
+} else if (name === "truman") {
+  console.log(greetings.truman);
 }
 #+end_src
 
@@ -63,17 +69,27 @@ console.log(greetings[name])
 #+RESULTS:
 : Good morning good morning good morning.
 
+#+begin_src js
+<<vars>>
+name = 'adrian'
+console.log(greetings[name])
+#+end_src
+
+#+RESULTS:
+: Good morning, Vietnam!
+
 ** A Slightly More Complex Example
 What if the variable didn't hold /exactly/ the key name?
 
 #+NAME: vars2
 #+begin_src js
-const name = 'Colin Jaffe';
+let name = 'Colin Jaffe';
 const greetings = {
-  angie: "Good morning!",
+  bill: "Good morning!",
   colin: "Good morning good morning good morning.",
-}
-
+  adrian: "Good morning, Vietnam!",
+  truman: "Good morning. And in case I don't see you, good afternoon, evening, and good night.",
+};
 #+end_src
 
 Now we're going to have to lop off the last name and lower case the first.
@@ -87,3 +103,40 @@ console.log(name.split(" "));
 
 #+RESULTS:
 : [ 'Colin', 'Jaffe' ]
+
+Okay, so we could grab the first index of that array to get us /almost/ the string we want, and then lowercase it.
+
+#+begin_src js
+<<vars2>>
+console.log(name.split(" ")[0].toLowerCase());
+#+end_src
+
+#+RESULTS:
+: colin
+
+Great! Now let's throw that into bracket notation to access the object's value at that property.
+
+#+begin_src js
+<<vars2>>
+console.log(greetings[name.split(" ")[0].toLowerCase()]);
+#+end_src
+
+#+RESULTS:
+: Good morning good morning good morning.
+
+And just to show that this is happening dynamically:
+
+#+begin_src js
+<<vars2>>
+name = 'Truman Burbank'
+console.log(greetings[name.split(" ")[0].toLowerCase()])
+#+end_src
+
+#+RESULTS:
+: Good morning. And in case I don't see you, good afternoon, evening, and good night.
+
+It's all just depending on what value is held in =name=! This will work with 100 names or 100,000 names, and it's a /lot/ less code.
+
+** This Is One Way To Avoid Huge Amounts Of Code Devoted To Logic
+
+Using data to look up what path you should take is a design pattern that can simplify your code greatly. Try it in the function tested and in related assignments, and explore it as an architecture moving forward.
