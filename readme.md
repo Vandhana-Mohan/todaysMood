@@ -63,13 +63,13 @@ console.log(greetings.name);
 Instead, what we want is to use bracket notation, which is JavaScript's syntax for, "Don't look up the key with this name, but with the name of whatever this JavaScript evaluates to."
 
 ```js
-    console.log(greetings[name])
+console.log(greetings[name])
 
-    Good morning good morning good morning.
+Good morning good morning good morning.
 
 
-    name = 'adrian'
-    console.log(greetings[name])
+name = 'adrian'
+console.log(greetings[name])
 
 //> "Good morning, Vietnam!"
 ```
