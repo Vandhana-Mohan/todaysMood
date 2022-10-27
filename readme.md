@@ -56,7 +56,6 @@ Now, we can't access it via dot notation, because then we'd be looking for a pro
 
 ```js
 console.log(greetings.name);
-
 //> undefined
 ```
 
@@ -64,14 +63,12 @@ Instead, what we want is to use bracket notation, which is JavaScript's syntax f
 
 ```js
 console.log(greetings[name])
-
 //> "Good morning good morning good morning."
 ```
 
 ```js
 name = 'adrian'
 console.log(greetings[name])
-
 //> "Good morning, Vietnam!"
 ```
 
@@ -98,7 +95,6 @@ First, we could see if we can get the first name only. `String.prototype.split` 
 
 ```js
 console.log(name.split(" "));
-
 //> [ 'Colin', 'Jaffe' ]
 ```
 
@@ -106,7 +102,6 @@ Okay, so we could grab the first index of that array to get us _almost_ the stri
 
 ```js
 console.log(name.split(" ")[0].toLowerCase());
-
 //> "colin"
 ```
 
@@ -114,7 +109,6 @@ Great! Now let's throw that into bracket notation to access the object's value a
 
 ```js
 console.log(greetings[name.split(" ")[0].toLowerCase()]);
-
 //> "Good morning good morning good morning."
 ```
 
@@ -123,7 +117,6 @@ And just to show that this is happening dynamically:
 ```js
 name = "Truman Burbank";
 console.log(greetings[name.split(" ")[0].toLowerCase()]);
-
 //> "Good morning. And in case I don't see you, good afternoon, good evening, and good night."
 ```
 
@@ -139,7 +132,6 @@ function getKeyNameFromFullName(fullName) {
 }
 
 console.log(greetings[getKeyNameFromFullName(name)]);
-
 //> "Good morning good morning good morning."
 ```
 
@@ -152,7 +144,6 @@ function getKeyNameFromFullName(fullName) {
 
 const keyName = getKeyNameFromFullName(name);
 console.log(greetings[keyName]);
-
 //> "Good morning good morning good morning."
 ```
 
