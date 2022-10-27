@@ -6,8 +6,10 @@ An exercise in using dynamic object keys to access data.
 This problem has the same basic setup as the Pursuit curriculum usually does, with the small added wrinkle that we haven't written the start of the function for you.
 
 ** Your Tools
-- Run =npm install= to install Jest. Then you can run =npm test= or (better yet) =npm run watch= in your terminal to get tests.
-  - The JSDoc
+- Run `npm install` to install Jest. Then you can run `npm test` or (better yet) `npm run watch` in your terminal to get tests.
+- Read the JSDoc thoroughly!
+- The test file is always your source of truth.
+- The section below has **lots of conceptual help**.
 
 ** Your Task
 Write the function described in =getTodaysFeeling.js=.

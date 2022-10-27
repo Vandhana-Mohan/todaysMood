@@ -10,7 +10,7 @@ This problem has the same basic setup as the Pursuit curriculum usually does, wi
 
 - Run `npm install` to install Jest. Then you can run `npm test` or (better yet) `npm run watch` in your terminal to get tests.
 - Read the JSDoc thoroughly!
-- The tests are always your source of truth.
+- The test file is always your source of truth.
 - The section below has **lots of conceptual help**.
 
 ## Your Task
