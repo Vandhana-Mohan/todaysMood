@@ -1,4 +1,4 @@
-const getTodaysFeeling = require("./getTodaysFeeling");
+const getTodaysFeeling = require("../getTodaysFeeling");
 
 describe("getTodaysFeeling", () => {
   test("returns a correct calculation", () => {
