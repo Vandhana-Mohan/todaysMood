@@ -51,15 +51,6 @@ const reviews = {
   },
 };
 
-const day1 = {
-  name: "wed",
-  mood: 2,
-};
-
-const day2 = {
-  name: "thu",
-  mood: -1,
-};
 
 // Write a function that follows this specification.
 
@@ -72,6 +63,21 @@ const day2 = {
  * @param {string} day.name - The name of the day. Each of these is a key in the `reviews` object at the top of this file.
  * @param {number} day.mood - The current mood for that day.
  * @returns {number} The adjusted rating for that day. This is calculated by adding the mood adjustment to the general rating for the day.
+ *
+ * EXAMPLES
+ *
+ * const day1 = {
+ *   name: "wed",
+ *   mood: 1,
+ * };
+ *
+ * const day2 = {
+ *   name: "sat",
+ *   mood: -3,
+ * };
+ *
+ * getTodaysFeeling(day1) //> 4
+ * getTodaysFeeling(day2) //> 2
  */
 
 // Write your function above! (Preferably on the /very/ next line after the JSDoc comment ends.)
