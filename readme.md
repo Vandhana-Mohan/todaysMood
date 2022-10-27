@@ -84,7 +84,8 @@ const greetings = {
   bill: "Good morning!",
   colin: "Good morning good morning good morning.",
   adrian: "Good morning, Vietnam!",
-  truman: "Good morning. And in case I don't see you, good afternoon, evening, and good night.",
+  truman:
+    "Good morning. And in case I don't see you, good afternoon, evening, and good night.",
 };
 ```
 
@@ -124,6 +125,35 @@ console.log(greetings[name.split(" ")[0].toLowerCase()]);
 ```
 
 It's all just depending on what value is held in `name`! This will work with 100 names or 100,000 names, and it's a _lot_ less code.
+
+## Such Messy Code Might Look Better In A Function
+
+Which we could call right from the bracket notation.
+
+```js
+function getKeyNameFromFullName(fullName) {
+  return fullName.split(" ")[0].toLowerCase();
+}
+
+console.log(greetings[getKeyNameFromFullName(name)]);
+
+//> "Good morning good morning good morning."
+```
+
+Or even save the return value from calling that function, and use _that_ as the key.
+
+```js
+function getKeyNameFromFullName(fullName) {
+  return fullName.split(" ")[0].toLowerCase();
+}
+
+const keyName = getKeyNameFromFullName(name);
+console.log(greetings[keyName]);
+
+//> "Good morning good morning good morning."
+```
+
+It all depends on how step-by-step you want to do it. The one-liner at the end of the previous function works just fine too, and learning to read complex evaluations is _highly_ valuable.
 
 ## This Is One Way To Avoid Huge Amounts Of Code Devoted To Logic
 
