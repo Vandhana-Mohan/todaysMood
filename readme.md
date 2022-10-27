@@ -76,7 +76,7 @@ Instead, what we want is to use bracket notation, which is JavaScript's syntax f
 
 ## A Slightly More Complex Example
 
-What if the variable didn't hold _exactly_ the key name?
+The bracket notation doesn't have to hold a variable. It can hold any JavaScript expression, evaluate it, and look up that key.
 
 ```js
 let name = "Colin Jaffe";
@@ -89,7 +89,9 @@ const greetings = {
 };
 ```
 
-Now we're going to have to lop off the last name and lower case the first.
+Now, to get the key `colin` from the string `'Colin Jaffe'`, we're going to have to lop off the last name and lower case the first.
+
+Let's take it step by step.
 
 First, we could see if we can get the first name only. `String.prototype.split` can give us an array out of string, we just need to tell it when to decide to start a new array element. Passing a `' '` separator can do that for us.'
 
