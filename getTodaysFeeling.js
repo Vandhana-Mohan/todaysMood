@@ -74,4 +74,14 @@ const day2 = {
  * @returns {number} The adjusted rating for that day. This is calculated by adding the mood adjustment to the general rating for the day.
  */
 
+// Write your function above! (Preferably on the /very/ next line after the JSDoc comment ends.)
+
+ /********************************************
+ * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
+ *           PLEASE DON'T TOUCH!            *
+ ********************************************/
+if (typeof getTodaysFeeling === 'undefined') {
+  getTodaysFeeling = undefined;
+}
+
 module.exports = getTodaysFeeling;
