@@ -28,7 +28,7 @@ const greetings = {
   colin: "Good morning good morning good morning.",
   adrian: "Good morning, Vietnam!",
   truman:
-    "Good morning. And in case I don't see you, good afternoon, evening, and good night.",
+    "Good morning. And in case I don't see you, good afternoon, good evening, and good night.",
 };
 ```
 
@@ -85,7 +85,7 @@ const greetings = {
   colin: "Good morning good morning good morning.",
   adrian: "Good morning, Vietnam!",
   truman:
-    "Good morning. And in case I don't see you, good afternoon, evening, and good night.",
+    "Good morning. And in case I don't see you, good afternoon, good evening, and good night.",
 };
 ```
 
@@ -121,7 +121,7 @@ And just to show that this is happening dynamically:
 name = "Truman Burbank";
 console.log(greetings[name.split(" ")[0].toLowerCase()]);
 
-//> "Good morning. And in case I don't see you, good afternoon, evening, and good night."
+//> "Good morning. And in case I don't see you, good afternoon, good evening, and good night."
 ```
 
 It's all just depending on what value is held in `name`! This will work with 100 names or 100,000 names, and it's a _lot_ less code.

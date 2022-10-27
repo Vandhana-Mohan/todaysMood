@@ -23,7 +23,7 @@ const greetings = {
   bill: "Good morning!",
   colin: "Good morning good morning good morning.",
   adrian: "Good morning, Vietnam!",
-  truman: "Good morning. And in case I don't see you, good afternoon, evening, and good night.",
+  truman: "Good morning. And in case I don't see you, good afternoon, good evening, and good night.",
 };
 #+end_src
 
@@ -88,7 +88,7 @@ const greetings = {
   bill: "Good morning!",
   colin: "Good morning good morning good morning.",
   adrian: "Good morning, Vietnam!",
-  truman: "Good morning. And in case I don't see you, good afternoon, evening, and good night.",
+  truman: "Good morning. And in case I don't see you, good afternoon, good evening, and good night.",
 };
 #+end_src
 
@@ -133,7 +133,7 @@ console.log(greetings[name.split(" ")[0].toLowerCase()])
 #+end_src
 
 #+RESULTS:
-: Good morning. And in case I don't see you, good afternoon, evening, and good night.
+: Good morning. And in case I don't see you, good afternoon, good evening, and good night.
 
 It's all just depending on what value is held in =name=! This will work with 100 names or 100,000 names, and it's a /lot/ less code.
 
