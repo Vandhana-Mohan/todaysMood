@@ -84,8 +84,7 @@ const greetings = {
   bill: "Good morning!",
   colin: "Good morning good morning good morning.",
   adrian: "Good morning, Vietnam!",
-  truman:
-    "Good morning. And in case I don't see you, good afternoon, evening, and good night.",
+  truman: "Good morning. And in case I don't see you, good afternoon, evening, and good night.",
 };
 ```
 
