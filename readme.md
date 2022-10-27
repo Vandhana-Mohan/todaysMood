@@ -37,8 +37,8 @@ You _could_ use an `if/else` chain like so:
 ```js
 if (name === "colin") {
   console.log(greetings.colin);
-} else if (name === "angie") {
-  console.log(greetings.angie);
+} else if (name === "bill") {
+  console.log(greetings.bill);
 } else if (name === "adrian") {
   console.log(greetings.adrian);
 } else if (name === "truman") {
